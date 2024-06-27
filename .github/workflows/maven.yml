@@ -25,13 +25,3 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./cloudcomputing
-    steps:
-    - name: test app
-      run: mvn test
