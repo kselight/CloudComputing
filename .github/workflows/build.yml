@@ -27,4 +27,4 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
-          path: ./target/cloudcomputing-0.0.1-SNAPSHOT.jar
+          path: ./cloudcomputing/target/cloudcomputing-0.0.1-SNAPSHOT.jar
