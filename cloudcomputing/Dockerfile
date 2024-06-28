@@ -1,6 +1,6 @@
 FROM azul/zulu-openjdk-alpine:17-jre
 
-WORKDIR target
+WORKDIR ./cloudcomputing/target
 COPY cloudcomputing-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080:80
 
