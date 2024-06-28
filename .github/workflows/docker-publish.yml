@@ -35,8 +35,7 @@ jobs:
       - name: Download build artifacts
         uses: actions/download-artifact@v3
         with:
-          name: java-build
-          path: ./target
+          path: ./cloudcomputing/target/cloudcomputing-0.0.1-SNAPSHOT.jar
 
       - name: List downloaded artifacts
         run: ls -al ./target
