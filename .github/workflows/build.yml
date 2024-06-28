@@ -23,7 +23,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: List build directory
-        run: ls -al ./cloudcomputing/target
+        run: ls -al ./target
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
         with:
