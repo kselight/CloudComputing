@@ -1,0 +1,12 @@
+name: Deploy
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    steps:
+      - name: Build
+        uses: ./.github/workflows/build.yaml
