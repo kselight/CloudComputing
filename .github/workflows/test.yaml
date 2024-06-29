@@ -3,10 +3,11 @@ name: Deploy
 on:
   push:
     branches-ignore:
-      - master
+      - main
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
       - name: Build
         uses: ./.github/workflows/build.yaml
