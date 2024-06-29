@@ -1,7 +1,6 @@
 name: Docker
 
-on:
-  workflow_call:
+on: [workflow_call]
 
 env:
   # Use docker.io for Docker Hub if empty
