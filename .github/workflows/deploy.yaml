@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Print directory
-        run: pwd
+        run: ls -al
       - name: Build
         uses: ./.github/workflows/build.yaml
 
