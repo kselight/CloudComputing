@@ -6,12 +6,14 @@ on:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
-      -
       - name: Build
         uses: ./.github/workflows/build.yaml
 
   deploy:
+    runs-on: ubuntu-latest
     needs: build
     if: success()
-    uses: ./.github/workflows/docker-publish.yaml
+    steps:
+      - uses: ./.github/workflows/docker-publish.yaml
