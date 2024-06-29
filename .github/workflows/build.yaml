@@ -1,8 +1,6 @@
 name: Java CI with Maven
 
-
-on:
-  workflow_call:
+on: [workflow_call]
 
 jobs:
   build:

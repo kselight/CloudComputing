@@ -6,7 +6,10 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/build.yaml
+    steps:
+      -
+      - name: Build
+        uses: ./.github/workflows/build.yaml
 
   deploy:
     needs: build
