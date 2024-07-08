@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudcomputing
+spec:
+  selector:
+    matchLabels:
+      app: cloudcomputing
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: cloudcomputing
+    spec:
+      containers:
+        - name: cloudcomputing
+          image: {{ .Values.image.repository }}
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
