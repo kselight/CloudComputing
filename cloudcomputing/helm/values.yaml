@@ -2,6 +2,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/kselight/cloudcomputing
+  tag: main
 #  repository: localhost:5000/cloudcomputing
   pullPolicy: IfNotPresent
 
